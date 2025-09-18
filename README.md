@@ -69,7 +69,9 @@ Please answer the following questions:
 - **Q3:** How can you explain the difference?
 	Please be specific.
 
-	- 
+	- There is less work in polling mode for boop than in interupt mode bc of so high frequency of polling and overhead, making program slower. Interupts allow for more CPU work and faster/more effecient CPU for Boop. 
+	- With memes, once the 1st memes is gotten, more memeskeep coming and there is not time for other work, no matter if polling or with interupts. Polling with memes doesnt even give initial work time. 
+
 - **Q4:** A famous google interview question: How can you tell by which way a stack grows in C on your architecture?
 	Brainstorm this as a group and test it out.
 	Use what you learned from that exercise to figure out which stack the interrupt handler `dev_isr` is executing on.
@@ -82,7 +84,7 @@ Please answer the following questions:
 	What is happening here?
 	What solutions do you foresee?
 
-	- 
+	- SO many memes are being pront out and there is no break inbetwen them, that the CPU can do no other work, leading to livelock. Solution can be to use DMA. 
 
 ## DMA
 
