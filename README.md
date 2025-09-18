@@ -61,17 +61,28 @@ You should be able to get by mostly only knowing the code in `main.c`.
 Please answer the following questions:
 
 - **Q1:** What happens when you run the system using polling?
+	- Each letter for the output is print out at split intervals with large gaps of time inbetween (for boop). 
+	- Each letter for the output is print out at split intervals with small gaps of time inbetween (for memes). It feels like its geoing faster or at least more waork is getting done at a smaller time (for memes), with only meme work being done. 
 - **Q2:** What happens when you run the system using interrupts?
+	- For boop, there is a quick gap of time very other __ are being printed (and a lot of __ work being done in between), then the leter is print out, in a cycle. 
+	- For memes, there is a quick span where __ work is done, then memes start being rinted out and no other work is done. 
 - **Q3:** How can you explain the difference?
 	Please be specific.
+
+	- 
 - **Q4:** A famous google interview question: How can you tell by which way a stack grows in C on your architecture?
 	Brainstorm this as a group and test it out.
 	Use what you learned from that exercise to figure out which stack the interrupt handler `dev_isr` is executing on.
 	Explain what you think is happening, and how that is possible?
 	In other words: how are stacks used with signals in Linux?
+
+	- Create a static variable in main. Print out its address. Call a function that takes in arguments (pass by value and NOT reference). Print out the address of the argument variable. Return from here and then main. If the aruments (or function variables) have lower number values for their addresses than main, then the stack grows downwards. Else, grows upwards. 
+	- 
 - **Q5:** Use the meme device both modes.
 	What is happening here?
 	What solutions do you foresee?
+
+	- 
 
 ## DMA
 
